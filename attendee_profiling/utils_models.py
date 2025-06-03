@@ -6,8 +6,8 @@ import statsmodels.api as sm
 from statsmodels.nonparametric.smoothers_lowess import lowess
 from kneed import KneeLocator
 
-import constants
-import utils
+from attendee_profiling import constants
+from attendee_profiling import utils
 
 
 
