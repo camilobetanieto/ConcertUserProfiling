@@ -17,7 +17,7 @@ from tslearn.metrics import lcss
 from tslearn.metrics import dtw
 
 
-import constants
+from attendee_profiling import constants
 
 # General settings for plotting
 sns.set_theme('paper', style="dark")

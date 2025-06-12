@@ -12,7 +12,11 @@ PROCESSED_PATH = DATASETS_PATH / "Processed"
 LOCATIONS_SPLIT_FILTERED_PATH = PROCESSED_PATH / "wifi_traces_filtered_split"
 PREPROCESSED_TRAJECTORIES_PATH = PROCESSED_PATH / "preprocessed_trajectories"
 TRAJECTORIES_EVENTS_PATH = PROCESSED_PATH / "trajectories_events"
+MODEL_INPUTS_PATH = PROCESSED_PATH / "model_inputs_preprocessed"
+TABLES_DESCRIPTION_PATH = PROCESSED_PATH / "tables_for_description"
+DISTANCES_EMBEDDINGS_PATH = PROCESSED_PATH / "distances_embeddings"
 
 
 REPORTS_PATH = PROJECT_ROOT / "reports"
 FIGURES_PATH = REPORTS_PATH / "figures"
+DESCRIPTIVE_ANALYSIS_PLOTS_PATH = FIGURES_PATH / "6-descriptive-analysis-plots"
