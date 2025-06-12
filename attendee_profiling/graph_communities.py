@@ -4,7 +4,8 @@ from sknetwork.clustering import Louvain, get_modularity
 from scipy import sparse
 import numpy as np
 import pandas as pd
-import constants
+
+from attendee_profiling import constants
 
 
 def bipartite_louvain_multiresolutions(biadjacency_matrix, resolutions):
