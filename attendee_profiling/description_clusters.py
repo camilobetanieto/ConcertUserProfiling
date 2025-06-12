@@ -9,17 +9,13 @@ import skmob
 import os
 from IPython.display import display
 
-import utils
-
-import importlib
-importlib.reload(utils)
+from attendee_profiling import config, utils
 
 # Assign the path to read the table related to the event rankings.
-path_event_scores = r'..\..\Datasets\Processed\tables_for_description'
-
+TABLES_DESCRIPTION_PATH = config.TABLES_DESCRIPTION_PATH
 
 # Read the sequence of stops table
-user_event_scores_durations_night = pd.read_csv(os.path.join(path_event_scores,'user_event_scores_durations_night.csv'))
+user_event_scores_durations_night = pd.read_csv(os.path.join(TABLES_DESCRIPTION_PATH,'user_event_scores_durations_night.csv'))
 
 
 # General settings for plotting

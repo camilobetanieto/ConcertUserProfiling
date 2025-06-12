@@ -15,6 +15,8 @@ TRAJECTORIES_EVENTS_PATH = PROCESSED_PATH / "trajectories_events"
 MODEL_INPUTS_PATH = PROCESSED_PATH / "model_inputs_preprocessed"
 TABLES_DESCRIPTION_PATH = PROCESSED_PATH / "tables_for_description"
 DISTANCES_EMBEDDINGS_PATH = PROCESSED_PATH / "distances_embeddings"
+CLUSTER_DESCRIPTION_PATH = PROCESSED_PATH / "8-clusters-description"
+CLUSTERING_RESULTS_PATH = PROCESSED_PATH / "clustering_results"
 
 
 REPORTS_PATH = PROJECT_ROOT / "reports"
