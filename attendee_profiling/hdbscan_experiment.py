@@ -1,4 +1,3 @@
-#from sklearn.cluster import HDBSCAN
 import hdbscan
 from sklearn.metrics import silhouette_score
 import numpy as np
