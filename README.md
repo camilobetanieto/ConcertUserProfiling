@@ -23,7 +23,6 @@ The `envs/` folder contains `.yml` files defining Conda environments. Unless oth
 │
 ├── reports                <- Generated outputs and final thesis document.
 │   |── CBN_MS_Thesis.pdf  <- Final thesis document.
-│   └── figures            <- Generated graphics and figures.
 │
 ├── envs                   <- The .yml files with the requirements.
 │
