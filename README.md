@@ -1,9 +1,5 @@
 # User Profiling at a Music Festival from Attendees’ Mobility Data
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
-
 Data Science MSc thesis on spatiotemporal analysis of human mobility at a music festival using anonymized Wi-Fi traces.
 
 ## Project Organization
@@ -22,8 +18,8 @@ The `envs/` folder contains `.yml` files defining Conda environments. Unless oth
 ├── LICENSE                <- MIT license
 ├── README.md              <- Project overview and structure.
 │
-├── notebooks              <- Jupyter notebooks. Organized in subfolders for analysis and preprocessing,
-│                             an labeled in sequential order.
+├── notebooks              <- Jupyter notebooks. Organized in subfolders for analysis and preprocessing
+│                             and labeled in sequential order.
 │
 ├── reports                <- Generated outputs and final thesis document.
 │   |── CBN_MS_Thesis.pdf  <- Final thesis document.
