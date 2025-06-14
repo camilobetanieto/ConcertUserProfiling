@@ -18,15 +18,12 @@ import branca.colormap
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
-# Paths to read the polygon information
-path_polygons_info = r'C:\Camilo\Estudio\Padova\Master thesis\Datasets\Processed\Zonas SONAR clipped'
+from attendee_profiling import config
 
 
 # Reading the Sónar polygons
-day_polygons_clipped_plot = gpd.read_file(os.path.join(path_polygons_info, 'sonar_day_polygons_clipped.json'))
-night_polygons_clipped_plot = gpd.read_file(os.path.join(path_polygons_info, 'sonar_night_polygons_clipped.json'))
+day_polygons_clipped_plot = gpd.read_file(os.path.join(config.CLIPPED_POLYGONS_PATH, 'sonar_day_polygons_clipped.json'))
+night_polygons_clipped_plot = gpd.read_file(os.path.join(config.CLIPPED_POLYGONS_PATH, 'sonar_night_polygons_clipped.json'))
 
 
 
@@ -118,9 +115,9 @@ def counts_h3_cells_to_gdf(counts_h3_cells_df, sonar_type='night'):
     """
     # Reading the H3 polygons
     if sonar_type == 'night':
-        h3_cells_lookup_shp = gpd.read_file(os.path.join(path_polygons_info, 'h3_cells_night_lookup.json'))
+        h3_cells_lookup_shp = gpd.read_file(os.path.join(config.CLIPPED_POLYGONS_PATH, 'h3_cells_night_lookup.json'))
     elif sonar_type == 'day':
-        h3_cells_lookup_shp = gpd.read_file(os.path.join(path_polygons_info, 'h3_cells_day_lookup.json'))
+        h3_cells_lookup_shp = gpd.read_file(os.path.join(config.CLIPPED_POLYGONS_PATH, 'h3_cells_day_lookup.json'))
     else:
         raise Exception("sonar_type must be 'night' or 'day'")
     
