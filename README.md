@@ -8,53 +8,34 @@ Data Science MSc thesis
 
 ## Project Organization
 
+The actual thesis document is contained in `reports`.
+
+To examine or run the code, everything is organized and displayed in notebooks, found in the the `notebooks/` folder in order (e.g., `0-preprocessing-timetables.ipynb`, `1-preprocessing-fix-polygons-h3pandas.ipynb`, ...), and organized in subfolders corresponding to `preprocessing/` and `analysis/`. The source code is in `attendee_profiling`
+The `envs/` folder contains the `.yml` files with the required dependencies. All notebooks can run with the `skmob_updated_h3` environment, except when it is explicitly stated in the notebook. 
+
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
+├── LICENSE                <- MIT license
+├── README.md              <- The top-level README for developers using this project.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── notebooks              <- Jupyter notebooks. Organized in subfolders for analysis and preprocessing,
+│                             an labeled in sequential order.
 │
-├── models             <- Trained and serialized models, model predictions, or model summaries
+├── reports                <- Generated outputs and final thesis document.
+│   |── CBN_MS_Thesis.pdf  <- Final thesis document.
+│   └── figures            <- Generated graphics and figures.
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── envs                   <- The .yml files with the requirements.
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         attendee_profiling and configuration for tools like black
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── attendee_profiling   <- Source code for use in this project.
+└── attendee_profiling     <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes attendee_profiling a Python module
+    ├── __init__.py             <- Marks this as a Python package
     │
-    ├── config.py               <- Store useful variables and configuration
+    ├── config.py               <- Useful variables and configuration
     │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+    .
+    .
+    .
 ```
 
 --------
