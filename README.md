@@ -7,7 +7,7 @@ Data Science MSc thesis on spatiotemporal analysis of human mobility at a music 
 The final thesis document can be found at `reports/CBN_MS_Thesis.pdf`.
 
 To explore or reproduce the code and analysis, Jupyter notebooks are provided in the `notebooks/` directory. These are:
-- Labeled in sequential order (e.g., `0-preprocessing-timetables.ipynb`, `1-preprocessing-fix-polygons-h3pandas.ipynb`, ...)
+- Labeled in sequential order (e.g., `00-preprocessing-timetables.ipynb`, `01-preprocessing-fix-polygons-h3pandas.ipynb`, ...)
 - Organized into subfolders (`preprocessing/`, `analysis/`) based on their function
 
 The main source code used by the notebooks is in the `attendee_profiling/` directory.
@@ -28,7 +28,7 @@ The `envs/` folder contains `.yml` files defining Conda environments. Unless oth
 ├── envs                   <- The .yml files with the requirements.
 │
 │
-└── attendee_profiling     <- Source code for use in this project.
+└── attendee_profiling     <- Source code used by notebooks.
     │
     ├── __init__.py             <- Marks this as a Python package
     │
