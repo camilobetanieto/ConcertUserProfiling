@@ -21,7 +21,7 @@ The `envs/` folder contains `.yml` files defining Conda environments. Unless oth
 ├── notebooks              <- Jupyter notebooks. Organized in subfolders for analysis and preprocessing
 │                             and labeled in sequential order.
 │
-├── reports                <- Generated outputs and final thesis document.
+├── reports                
 │   |── CBN_MS_Thesis.pdf  <- Final thesis document.
 │
 ├── envs                   <- The .yml files with the requirements.
